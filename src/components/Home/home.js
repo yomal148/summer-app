@@ -1,29 +1,20 @@
-import React, { Component, useState } from "react";
+import { useState } from "react";
 import './index.css'
-import { Text, StyleSheet } from "react-native";
+import { Link} from 'react-router-dom';
 
+// Home component
 const Home = () => {
-    const [titleText, setTitleText] = useState("Bird's Nest");
-    const bodyText = "This is not really a bird nest.";
+    // Hook for clickable title
+    const [buttonText, setButton] = useState("Discover Your Local Breweries");
 
-    const onPressTitle = () => {
-        setTitleText("Bird's Nest [pressed]");
-    };
+    function handleClick(){
+        setButton(<Link to="/breweries"> </Link> );
+    }
         return (
-            <Text>
-                <Text onPress={onPressTitle()}>
-                    {titleText}
-                    {"\n"}
-                    {"\n"}
-                </Text>
-            <Text numberOfLines={5}>{bodyText}</Text>
-            </Text>
-
-           /* <div className="home">
-
-                <h1>Discover Your Local Breweries</h1>
-                <div className="Beer-bg"></div>
-            </div>*/
+           <div className="home">
+               <button onClick={handleClick}>{buttonText}</button>
+               <div className="Beer-bg"></div>
+            </div>
         )
 
 

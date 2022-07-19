@@ -1,19 +1,19 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import './index.css'
-import { Link} from 'react-router-dom';
+import {Link, useNavigate} from "react-router-dom";
+import Breweries from "../Breweries/breweries.js"
 
 // Home component
 const Home = () => {
-    // Hook for clickable title
-    const [buttonText, setButton] = useState("Discover Your Local Breweries");
+    // navigate function
+    const navigate = useNavigate()
 
-    function handleClick(){
-        setButton(<Link to="/breweries"> </Link> );
-    }
         return (
            <div className="home">
-               <button onClick={handleClick}>{buttonText}</button>
+               <Link to={"/breweries"}>
+                 <button> Discover Your Local Breweries</button>
                <div className="Beer-bg"></div>
+               </Link>
             </div>
         )
 

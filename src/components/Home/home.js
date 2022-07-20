@@ -7,12 +7,10 @@ import Card from "react-native-web";
 const Home = () => {
 
         return (
-           <div className="home">
-               <Link to={"/breweries"}>
-                   Discover Your Local Breweries
-                   <div className="Beer-bg"></div>
-               </Link>
+            <div className="Beer-bg">
+                <div className="orange"> </div>
             </div>
+
         )
 
 

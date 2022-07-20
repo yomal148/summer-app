@@ -8,11 +8,15 @@
 
 .Beer-bg{
     background-image:
-            url("https://manofmany.com/wp-content/uploads/2019/10/Beer-Sizes-Explained.jpg");
+            url("https://media.diageodam.com/DCH/image/jpeg/10235048/Guinness_BackToThePub_0864_S.jpg");
     background-size: auto;
-    height: 100vh;
-    margin-top: -70px;
-    font-size:40px;
-    background-repeat:no-repeat;
-    background-position: right 100px;
+    width: 700px;
+    height: 800px;
+    background-size: cover;
+    position: relative;
+    left: 800px;
+}
+
+.orange{
+    background-color: orange;
 }

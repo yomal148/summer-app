@@ -1,3 +1,5 @@
 .navbar-custom{
 background-color: white;
+    position: relative;
+    left: 800px;
 }

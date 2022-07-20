@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import './index.css'
 import {Link, useNavigate} from "react-router-dom";
-import Card from "react-native-web";
+import {Image, View, } from "react-native";
 
 // Home component
 const Home = () => {
-
         return (
-            <div className="Beer-bg">
-                <div className="orange"> </div>
+            <div className="orange">
+                <div className="Beer-bg"></div>
+                <div className="text">
+                    <h1 Find your local breweries ></h1>
+                </div>
             </div>
 
         )
